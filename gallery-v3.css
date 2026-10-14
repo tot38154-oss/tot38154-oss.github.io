@@ -12,3 +12,6 @@ html[data-theme=light]{--navy:#f0f2f7;--deep:#e8edf5;--glass-top:rgba(255,255,25
 .gallery-toolbar .tabs{grid-column:2;grid-row:1;width:max-content;max-width:100%;justify-self:center}
 .gallery-toolbar .gallery-hint{grid-column:3;grid-row:1;justify-self:end;margin:0}
 @media(max-width:900px){.gallery-toolbar{grid-template-columns:minmax(0,1fr);gap:12px}.gallery-toolbar .tabs{grid-column:1;grid-row:1}.gallery-toolbar .gallery-hint{grid-column:1;grid-row:2;justify-self:center;text-align:center}}
+.field-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(max-width:1050px){.field-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery-toolbar{grid-template-columns:minmax(0,1fr)}.gallery-toolbar .tabs{grid-column:1;grid-row:1}.gallery-toolbar .gallery-hint{grid-column:1;grid-row:2;justify-self:center;text-align:center}}
+@media(max-width:760px){.field-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.field-tab:last-child{grid-column:1/-1;min-height:85px}.gallery-toolbar .tabs{width:100%;display:flex}.tabs button{min-width:0;flex:1;padding:10px 6px;gap:5px;flex-direction:column;text-align:center}.tabs button span{white-space:normal}.tabs small{font-size:9px}}
